@@ -6,4 +6,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Pra.AdvancedClasses.Core\Pra.AdvancedClasses.Core.csproj" />
+  </ItemGroup>
+
 </Project>
