@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Pra.AdvancedClasses.Core
 {
@@ -10,7 +6,7 @@ namespace Pra.AdvancedClasses.Core
     {
         protected string name;
         protected int age;
-        protected Guid identificationId = Guid.NewGuid();
+        protected Guid id;
 
         public bool CanVote { get; set; } = true;
 
@@ -30,7 +26,7 @@ namespace Pra.AdvancedClasses.Core
         {
             Name = name;
             Age = age;
-            identificationId = Guid.NewGuid();
+            id = Guid.NewGuid();
         }
 
         public void CelebrateBirthday()

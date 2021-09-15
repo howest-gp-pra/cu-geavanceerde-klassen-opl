@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Pra.AdvancedClasses.Core
 {
     public class Employee : Person
@@ -24,7 +19,7 @@ namespace Pra.AdvancedClasses.Core
         public override string ShowId()
         {
             string teenagerText = age < 20 ? "is a" : "is not a";
-            return base.ShowId() + $" They earn {salary}.";
+            return $"{Name} has id {id} and {teenagerText} teenager. (Salary: {salary})";
         }
 
     }
